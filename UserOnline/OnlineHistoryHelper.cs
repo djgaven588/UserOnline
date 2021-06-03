@@ -19,7 +19,7 @@ namespace UserOnline
             // While saving the calculation won't fix that this method is inefficent at scale, it will reduce the amount
             // of traffic through this method, greatly reducing the average response time, at the cost of some space in
             // the database, which we should use anyways due to IO speed compared to recalculating, since this will always be
-            // more expensive than a lookup.
+            // more expensive than a lookup regardless of how well we optimize it.
 
             // E = entries
             // U = users
